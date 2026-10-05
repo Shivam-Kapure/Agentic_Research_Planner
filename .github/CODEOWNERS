@@ -1,0 +1,27 @@
+# Auto-requests the area's reviewer on PRs. Paths are created during S1–S4.
+# Shivam authors the code; teammates review and present their areas.
+
+# Orchestration, Planner, messaging/trace, LLM router
+/backend/app/graph/            @kash-gg
+/backend/app/agents/planner/   @kash-gg
+/backend/app/agents/base.py    @kash-gg
+/backend/app/messaging/        @kash-gg
+/backend/app/tracing/          @kash-gg
+/backend/app/llm/              @kash-gg
+
+# Evidence acquisition
+/backend/app/agents/search/    @HARSHHLEDWANI
+/backend/app/agents/analysis/  @HARSHHLEDWANI
+/backend/app/tools/            @HARSHHLEDWANI
+/backend/app/domains/          @HARSHHLEDWANI
+/.github/workflows/            @HARSHHLEDWANI
+
+# Synthesis & writing
+/backend/app/agents/synthesis/ @kash-gg
+/backend/app/agents/writer/    @kash-gg
+/docs/io/                      @kash-gg
+
+# Frontend, auth, keys, deployment
+/frontend/                     @kkbot122
+/backend/app/auth/             @kkbot122
+/backend/app/keys/             @kkbot122

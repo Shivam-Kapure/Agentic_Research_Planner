@@ -1,0 +1,46 @@
+# ---------- Secrets ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# ---------- Node / frontend ----------
+node_modules/
+frontend/dist/
+.vercel/
+*.tsbuildinfo
+npm-debug.log*
+
+# ---------- Local data ----------
+*.db
+*.sqlite
+*.sqlite3
+data/
+*.pdf
+!docs/**/*.pdf
+
+# ---------- OS / editors ----------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+
+# ---------- Claude Code local settings ----------
+.claude/settings.local.json
