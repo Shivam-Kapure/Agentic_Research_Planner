@@ -1,0 +1,7 @@
+# Gitleaks config: default rules plus an allowlist for obvious placeholders.
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Placeholders in example config and fake keys built in tests"
+paths = ['''\.env\.example$''']
