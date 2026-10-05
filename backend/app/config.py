@@ -22,6 +22,7 @@ class Settings(BaseSettings):
     cors_allowed_origins: str = "http://localhost:5173"
 
     openalex_mailto: str = ""
+    openalex_api_key: str = Field(default="", repr=False)
     semantic_scholar_api_key: str = ""
 
     # Development-only fallback LLM keys; production uses per-user (BYOK) keys.
