@@ -5,7 +5,7 @@ List fields annotated with `operator.add` are append-only: nodes return only new
 """
 
 import operator
-from typing import Annotated, Literal
+from typing import Annotated
 
 from pydantic import BaseModel, Field
 
@@ -19,8 +19,6 @@ from app.domain.research import (
     Synthesis,
 )
 from app.messaging import AgentMessage
-
-RunStatus = Literal["running", "completed", "completed_with_limitations", "failed"]
 
 
 class Budget(BaseModel):
@@ -64,4 +62,3 @@ class ResearchState(BaseModel):
     steps: int = 0
     search_rounds: int = 0
     replans: int = 0
-    status: RunStatus = "running"
