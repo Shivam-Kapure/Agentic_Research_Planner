@@ -44,3 +44,6 @@ Thumbs.db
 
 # ---------- Claude Code local settings ----------
 .claude/settings.local.json
+
+# ---------- ResearchPilot run outputs (export real traces to docs/traces/ deliberately) ----------
+runs/
